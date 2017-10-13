@@ -325,8 +325,7 @@ def try_gtk_interface(gtk_bus_name, gtk_menu_object_path, gtk_actions_paths_list
 ewmh = EWMH()
 win = ewmh.getActiveWindow()
 window_id = hex(ewmh._getProperty('_NET_ACTIVE_WINDOW')[0])
-window_pid = ewmh._getProperty('_NET_WM_PID', win)[0]
-prompt = psutil.Process(window_pid).name() + ': '
+prompt = 'Window: '
 gtk_bus_name = ewmh._getProperty('_GTK_UNIQUE_BUS_NAME', win)
 gtk_menu_object_path = ewmh._getProperty('_GTK_MENUBAR_OBJECT_PATH', win)
 gtk_app_object_path = ewmh._getProperty('_GTK_APPLICATION_OBJECT_PATH', win)
