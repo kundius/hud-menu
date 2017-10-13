@@ -5,6 +5,7 @@ Provides a way to run menubar commands through a searchable list.
 
 ## Dependencies
 * python-dbus
+* python-xlib
 * rofi [(or alternatively: dmenu)](https://github.com/jamcnaughton/hud-menu/blob/dev/README.md#using-dmenu-in-place-of-rofi)
 * appmenu-qt
 * unity-gtk-modules
